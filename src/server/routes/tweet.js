@@ -65,7 +65,6 @@ router.put('/tweet/:id', getToken, checkToken, (req, res) => {
         Tweet.findById(id, (err, tweet) => {
             if(err) res.json({errors: ['Something went wrong']});
             else{
-                console.log(tweet);
                 tweet.title = title;
                 tweet.body = body;
                 tweet.date = new Date();
