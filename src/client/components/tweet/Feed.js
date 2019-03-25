@@ -11,7 +11,6 @@ class Feed extends Component {
 	}
 
 	componentDidMount(){
-		const { pathName } = this.props.location;
 		fetch('/tweets')
 			.then(res => res.json())
 			.then(tweets => {
