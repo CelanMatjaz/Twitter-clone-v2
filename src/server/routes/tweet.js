@@ -84,7 +84,6 @@ router.put('/tweet/:id', getToken, checkToken, (req, res) => {
 router.delete('/tweet/:id', getToken, checkToken, (req, res) => {
     const { id } = req.params;
     Tweet.findByIdAndDelete(id, err => {
-        console.log(id);
         if(err) res.json({errors: ['Something went wrong']});
         else res.json({msg: 'Tweet was deleted'});
     });
