@@ -61,7 +61,7 @@ export class Register extends Component {
             .catch(err => {
                 console.error(err);
                 this.setState({
-                    registerErrors: data || ['Error registering user']
+                    registerErrors: ['Error registering user']
                 });
             });
     }
