@@ -8,13 +8,6 @@ import {
     loginCheckFailed
 } from '../action creators/auth';
 
-export const Register = creds => {
-    return dispatch => {
-        dispatch(register());
-        
-    }
-}
-
 export const Login = creds => {
     return dispatch => {
         dispatch(login());
