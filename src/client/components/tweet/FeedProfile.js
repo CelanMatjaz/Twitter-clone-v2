@@ -32,7 +32,6 @@ class FeedProfile extends Component {
     }
 
     handleDelete = id => {
-        console.log(`/tweet/${id}`);
         const token = 'Bearer ' + localStorage.getItem('token');
 
         fetch(`/tweet/${id}`, {
